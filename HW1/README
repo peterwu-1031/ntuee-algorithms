@@ -1,0 +1,23 @@
+SYNOPSIS:
+
+NTU_sort -[IS|MS|QS|HS] <input_file_name> <output_file_name>
+
+This program supports three different sorting methods: insertion sort, merge sort and heap sort.
+=====
+DIRECTORY:
+
+bin/	  executable binary
+doc/	  introduction / results
+lib/	  library
+src/ 	  source C++ codes
+======
+HOW TO COMPILE:
+
+make
+======
+HOW TO RUN:
+
+	./bin/NTU_sort -[IS|MS|QS|HS] <input_file_name> <output_file_name>
+	For example,
+	./bin/NTU_sort -MS inputs/1000.case1.in outputs/1000.case1.out
+
