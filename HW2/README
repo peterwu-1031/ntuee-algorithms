@@ -1,0 +1,14 @@
+DIRECTORY:
+bin/	  executable binary(mps)
+doc/	  introduction.pdf
+src/ 	  maxPlanarSubset.cpp
+README
+makefile
+====
+HOW TO COMPILE:
+
+make
+====
+HOW TO RUN:
+
+bin/mps <input_file_name> <output_file_name>
