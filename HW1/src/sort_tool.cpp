@@ -35,9 +35,6 @@ void SortTool::QuickSort(vector<int>& data){
 // Sort subvector (Quick sort)
 void SortTool::QuickSortSubVector(vector<int>& data, int low, int high) {
     // Function : Quick sort subvector
-    // TODO : Please complete QuickSortSubVector code here
-    // Hint : recursively call itself
-    //        Partition function is needed
     if(low<high) {
         int partition = Partition(data, low, high);
         QuickSortSubVector(data, low, partition-1);
@@ -47,8 +44,6 @@ void SortTool::QuickSortSubVector(vector<int>& data, int low, int high) {
 
 int SortTool::Partition(vector<int>& data, int low, int high) {
     // Function : Partition the vector 
-    // TODO : Please complete the function
-    // Hint : Textbook page 171
     srand(time(NULL));
     int r = low+rand()%(high-low+1);
     swap(data[high], data[r]);
@@ -73,9 +68,6 @@ void SortTool::MergeSort(vector<int>& data){
 // Sort subvector (Merge sort)
 void SortTool::MergeSortSubVector(vector<int>& data, int low, int high) {
     // Function : Merge sort subvector
-    // TODO : Please complete MergeSortSubVector code here
-    // Hint : recursively call itself
-    //        Merge function is needed
     if(low<high) {
         int mid = (low+high)/2;
         MergeSortSubVector(data, low, mid);
@@ -87,7 +79,6 @@ void SortTool::MergeSortSubVector(vector<int>& data, int low, int high) {
 // Merge
 void SortTool::Merge(vector<int>& data, int low, int middle1, int middle2, int high) {
     // Function : Merge two sorted subvector
-    // TODO : Please complete the function
     int n_left = middle1-low+1;
     int n_right = high-middle2+1;
     int left[n_left+1];
@@ -130,7 +121,6 @@ void SortTool::HeapSort(vector<int>& data) {
 //Max heapify
 void SortTool::MaxHeapify(vector<int>& data, int root) {
     // Function : Make tree with given root be a max-heap if both right and left sub-tree are max-heap
-    // TODO : Please complete max-heapify code here
     int left = 2*root+1;
     int right = left+1;
     int max_index = root;
@@ -150,7 +140,6 @@ void SortTool::MaxHeapify(vector<int>& data, int root) {
 void SortTool::BuildMaxHeap(vector<int>& data) {
     heapSize = data.size(); // initialize heap size
     // Function : Make input data become a max-heap
-    // TODO : Please complete BuildMaxHeap code here
     for(int i=(heapSize-2)/2; i>=0; i--) {
         MaxHeapify(data, i);
     }
