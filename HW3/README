@@ -1,0 +1,14 @@
+DIRECTORY:
+bin/	  executable binary(cb)
+doc/	  introduction.pdf
+src/ 	  CycleBreaking.cpp
+README
+makefile
+====
+HOW TO COMPILE:
+
+make
+====
+HOW TO RUN:
+
+bin/cb <input_file_name> <output_file_name>
