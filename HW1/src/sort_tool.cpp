@@ -16,7 +16,6 @@ SortTool::SortTool() {}
 // Insertsion sort method
 void SortTool::InsertionSort(vector<int>& data) {
     // Function : Insertion sort
-    // TODO : Please complete insertion sort code here
     for(int i=1; i<data.size(); i++) {
             int key = data[i];
             int j = i-1;
